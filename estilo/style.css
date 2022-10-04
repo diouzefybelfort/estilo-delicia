@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: darkgray;
+}
+
+header {
+    background-color: orange;
+}
+
+header h1 {
+    font-size: 3em;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 0.7em;
+}
+
+section > p {
+    line-height: 2em;
+    padding-bottom: 10px;
+    
+} 
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    padding: 20px;
+    
+    background-size: 700px;
+    background-attachment: fixed;
+  
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.233);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    background-size: contain;
+}
+
+section#img01 {
+    background-image: url('../imagens/pdf-1.jpg');
+    background-position: center center;
+}
+
+section#img02 {
+    background-image: url('../imagens/pdf-2.webp');
+    background-position: center center;
+}
+
+section#img03 {
+    background-image: url('../imagens/pdf-3.jpg');
+    background-position: center center;
+}
+
+section#img04 {
+    background-image: url('../imagens/pdf-4.webp');
+    background-position: center center;
+}
+
+section#img05 {
+    background-image: url('../imagens/pdf-5.jpg');
+    background-position: center center;
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
