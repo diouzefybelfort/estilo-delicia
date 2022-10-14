@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #F8B50C;
+    --cor1: #d98a0b49;
+    --cor2: #F08219;
+    --cor3: #D9500B;
+    --cor4: #F83A0C;
+
+    --fonte-destaque: font-family: 'Bebas Neue', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,79 +19,66 @@
 }
 
 body {
-    background-color: darkgray;
+    background-color: var(--cor1);
 }
 
 header {
-    background-color: orange;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor4));
+    text-align: center;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.247);
 }
 
 header h1 {
-    font-size: 3em;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 30px;
-    line-height: 2em;
-    font-family: var(--fonte3);
-    font-size: 0.7em;
-}
-
-section > p {
-    line-height: 2em;
-    padding-bottom: 10px;
-    
-} 
-
-section.normal {
-    background-color: white;
-}
-
-section.imagem {
-    padding: 20px;
-    
-    background-size: 700px;
-    background-attachment: fixed;
-  
-}
-
-section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.233);
     color: white;
-    display: inline-block;
-    padding: 5px;
-    background-size: contain;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.342);
 }
 
-section#img01 {
-    background-image: url('../imagens/pdf-1.jpg');
-    background-position: center center;
+header p {
+    padding-bottom: 60px;
+    color: white;
+    font-size: 1.1em;
+    max-width: 325px;
+    margin: auto;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.342);
 }
 
-section#img02 {
-    background-image: url('../imagens/pdf-2.webp');
-    background-position: center center;
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 13px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px    ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
 }
 
-section#img03 {
-    background-image: url('../imagens/pdf-3.jpg');
-    background-position: center center;
+p {
+    font-size: 0.9em;
 }
 
-section#img04 {
-    background-image: url('../imagens/pdf-4.webp');
-    background-position: center center;
+div.video {
+    border-radius: 10px;
+    background-color: var(--cor2);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
 }
 
-section#img05 {
-    background-image: url('../imagens/pdf-5.jpg');
-    background-position: center center;
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
-
+  
 footer {
     padding: 10px;
     background-color: black;
